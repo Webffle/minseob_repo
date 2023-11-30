@@ -8,7 +8,6 @@ export class AppController {
 
   @Get()
   getAllNotice() {
-    throw new UnauthorizedException('현님 hi');
     return data;
   }
 }
