@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, UnauthorizedException } from '@nestjs/common';
 import { AppService } from './app.service';
 import { data } from './config';
 
@@ -8,6 +8,7 @@ export class AppController {
 
   @Get()
   getAllNotice() {
+    throw new UnauthorizedException('현님 hi');
     return data;
   }
 }
