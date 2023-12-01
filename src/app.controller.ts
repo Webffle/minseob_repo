@@ -8,6 +8,6 @@ export class AppController {
 
   @Get()
   getAllNotice() {
-    return data;
+    return this.appService.getHello();
   }
 }
